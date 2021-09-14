@@ -3,6 +3,7 @@ name: yamdb_workflow
 on:
   push:
     branches:
+      - master
       - "**"
     paths-ignore:
       - '**/README.md'

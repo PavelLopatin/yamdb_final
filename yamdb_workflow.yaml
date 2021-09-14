@@ -47,7 +47,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: lopatyn1244/yamdb_final:latest
+          tags: lopatyn1244/yamdb:latest
 
   deploy:
     if: github.ref == 'refs/heads/master'
@@ -63,7 +63,7 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           stack_file_name: docker-compose.yaml
           script: |
-            sudo docker pull lopatyn1244/yamdb_final
+            sudo docker pull lopatyn1244/yamdb
             sudo docker-compose stop
             sudo docker-compose rm web
             touch .env

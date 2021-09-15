@@ -47,3 +47,4 @@ docker-compose exec web python3 manage.py migrate --noinput
 ```
 ### Образ на DockerHub https://hub.docker.com/repository/docker/lopatyn1244/yamdb
 ### Подробную инструкцию развернутого проекта можно посмотреть по адресу http://127.0.0.1/redoc/
+### Адрес сайта http://84.201.157.75

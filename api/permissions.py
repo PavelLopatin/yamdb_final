@@ -33,4 +33,3 @@ class ReviewOwnerPermission(permissions.BasePermission):
             or request.user.is_moderator
         ):
             return True
-        return False

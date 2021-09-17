@@ -6,10 +6,9 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
-      - .env
+      - ./.env
   web:
-    image: lopatyn1244/yamdb:latest
-    build: .
+    image: lopatyn1244/yamdb
     restart: always
     volumes:
       - static_value:/code/static/
@@ -17,7 +16,7 @@ services:
     depends_on:
       - db
     env_file:
-      - .env
+      - ./.env
 
   nginx:
     image: nginx:1.19.3
